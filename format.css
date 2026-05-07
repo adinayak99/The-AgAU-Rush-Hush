@@ -1,0 +1,337 @@
+/*Importing CSS fontstyles*/
+.manufacturing-consent-regular {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.new-rocker-regular {
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* Reset default page margins so there is no white gap at the top */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.responsive-image {
+  display: block;
+  width: 100%;          /* fills available width */
+  max-width: 700px;     /* caps size on large screens */
+  height: auto;         /* preserves aspect ratio */
+  margin: 24px auto;    /* center horizontally */
+  border-radius: 10px;
+}
+
+.header_section {
+      background-color: black;  /* blue */
+      color: white;
+      margin: 0;
+      position: relative;
+      display: flex; /* Enable horizontal layout */
+      align-items: center; /* Vertically center items */
+      justify-content: center; /* Align to left, with space for text centering */
+      padding: 20px; /* Add padding for spacing */
+    }
+
+.logo {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 125px;
+  height: 125px;
+  margin-right: 0px; /* Space between logo and text */
+}
+
+.header_text {
+  flex: 1; /* Take remaining space */
+  text-align: center; /* Center text within its area */
+}
+
+.header_text h1 {
+  margin-top: 0; /* Align with logo */
+  margin-bottom: 12px; /* Keep spacing */
+}
+
+.header_text p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+/* Make header title sit flush with the header by removing the h1 top margin */
+.header_section h1 {
+    font-family: New Rocker;
+    text-align: center;
+    font-weight: 100;
+    font-size: 48px;
+    color: white;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    border-bottom: white;
+    align-items: center;
+    justify-content: center;
+}
+.header_section p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+
+.text_section {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #daffd4; /* light gray */
+  color: #333;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px 0 20px;
+  justify-content: center;
+  gap: 8px;
+      
+}
+
+.text_section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: rgb(15, 113, 57);
+}
+
+.text_section h3{
+    font-family: TikTok Sans, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    font-variation-settings:'wdth' 105.5;
+}
+
+.text_section p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  margin-left: 180px;
+  margin-right: 170px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.text_section ol {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  margin-left: 180px;
+  margin-right: 170px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.text_section ul {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  margin-left: 180px;
+  margin-right: 170px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.text_section iframe {
+  margin-left: 180px;
+  margin-bottom: 12px;
+  min-width: 75% !important;
+  text-align: center;
+}
+
+.left-align {
+  align-self: flex-start; /* Align to the left within flex container */
+  text-align: left;
+  font-size: 18px;
+}
+
+.footer {
+    background-color: black; /* Light gray */
+    border-color: #fbfbfb;
+    color: rgb(235, 228, 228)
+  }
+
+.footer h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+.circle-buttons {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+.circle-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(44, 41, 41);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  }
+
+  .circle-button:hover {
+    background-color: rgb(237, 232, 232);
+    color: black;
+    border: 0px solid rgb(255, 255, 255);
+  }
+
+  .chart-frame {
+  display: block;
+  width: 60%;
+  max-width: 900px;
+  height: 600px;
+  margin: 40px auto;   /* THIS centers it */
+  border: none;
+}
+
+.author-block {
+  text-align: center;
+  margin: 10px auto 30px auto;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.author-block p {
+  margin: 0;
+}
+
+  @media (max-width: 768px) {
+  .header_section h1 {
+    font-size: 30px; /* Smaller on tablets/mobile */
+  }
+  .text_section h1 {
+    font-size: 24px; /* Adjust as needed */
+  }
+  .text_section h3 {
+    font-size: 24px; /* Reduce h3 size */
+  }
+  .text_section p {
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+
+  .text_section ol {
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+
+  .text_section ul {
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+
+  .text_section iframe {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 80%;
+    width: 90%;
+  }
+
+  .responsive-image {
+    max-width: 90%;
+  }
+
+  .chart-frame {
+    width: 95%;
+    height: 500px;
+    margin: 30px auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .header_section {
+    flex-direction: column; /* Stack logo and text vertically if needed for centering */
+    align-items: center;
+  }
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .header_section h1 {
+    font-size: 24px; /* Even smaller on phones */
+  }
+  .text_section h1 {
+    font-size: 28px; /* Smaller for phones */
+  }
+  .text_section h3 {
+    font-size: 16px; /* Further reduce h3 */
+  }
+  .text_section p {
+    font-size: 16px; /* Further reduce p */
+    margin-left: 100px;
+    margin-right: 12px;
+  }
+
+  .text_section ol {
+    margin-left: 1000px;
+    margin-right: 24px;
+  }
+
+  .text_section ul {
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+  .text_section iframe {
+    margin-left: 100px;
+    margin-right: 24px;
+    max-width: 50%;
+  }
+
+   .left-align {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 12px;
+  }
+
+  .responsive-image {
+    max-width: 90%;
+  }
+
+  .chart-frame {
+    width: 100%;
+    height: 450px;
+    margin: 20px auto;
+  }
+
+   .author-block {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  /* Add more rules for other elements */
+}
