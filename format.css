@@ -198,6 +198,7 @@ html, body {
   align-self: flex-start; /* Align to the left within flex container */
   text-align: left;
   font-size: 18px;
+  margin-left: 380px;
 }
 
 .footer {
@@ -285,8 +286,8 @@ html, body {
 
   .left-align p{
     font-size: 14px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .text_section ol {
@@ -363,7 +364,7 @@ html, body {
   .text_section p {
     font-size: 16px;
     max-width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .text_section ol {
@@ -373,7 +374,7 @@ html, body {
   }
 
   .left-align button {
-    margin-left: 0;
+    margin-left: 0px;
   }
   
   .outline-disabled-economics {
@@ -392,16 +393,16 @@ html, body {
   }
 
   .left-align {
-    font-size: 12px;
+    font-size: 14px;
     align-self: flex-start;
     width: 100%;
     padding-left: 12px;
   }
 
   .left-align p {
-    font-size: 12px;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .responsive-image {
