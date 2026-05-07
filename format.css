@@ -11,7 +11,23 @@
   font-style: normal;
 }
 
+.outline-disabled-economics{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  color: #055a0d;
+  border: 3px solid #055a0d;
+  padding: 8px 14px;
+  border-radius: 24px;
+  margin-left: 380px;
+  font-size: 16px;
+  opacity: 1; /* Ensure full opacity */
+}
 
+.outline-disabled-economics:disabled {
+  background-color: transparent;
+  color: #055a0d;
+  border-color: #055a0d;
+}
 
 /* Reset default page margins so there is no white gap at the top */
 html, body {
@@ -124,10 +140,10 @@ html, body {
 .text_section p {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2;
-  margin-left: 180px;
-  margin-right: 170px;
+  margin-left: 380px;
+  margin-right: 300px;
   margin-bottom: 12px;
   text-align: left;
 }
@@ -135,10 +151,10 @@ html, body {
 .text_section ol {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2;
-  margin-left: 180px;
-  margin-right: 170px;
+  margin-left: 380px;
+  margin-right: 300px;
   margin-bottom: 12px;
   text-align: left;
 }
@@ -146,18 +162,19 @@ html, body {
 .text_section ul {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2;
-  margin-left: 180px;
-  margin-right: 170px;
+  margin-left: 380px;
+  margin-right: 300px;
   margin-bottom: 12px;
   text-align: left;
 }
 
 .text_section iframe {
-  margin-left: 180px;
+  margin-left: 380px;
+  margin-right: 300px;
   margin-bottom: 12px;
-  min-width: 75% !important;
+  min-width: 60% !important;
   text-align: center;
 }
 
@@ -239,26 +256,31 @@ html, body {
     font-size: 24px; /* Reduce h3 size */
   }
   .text_section p {
-    font-size: 16px;
+    font-size: 22px;
     margin-left: 0px;
-    margin-right: 24px;
+    margin-right: 0px;
+  }
+
+  .left-align p{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 12px;
   }
 
   .text_section ol {
     margin-left: 0px;
-    margin-right: 24px;
+    margin-right: 0px;
   }
 
   .text_section ul {
     margin-left: 0px;
-    margin-right: 24px;
+    margin-right: 0px;
   }
 
   .text_section iframe {
-    margin-left: 0px;
-    margin-right: 0px;
-    max-width: 80%;
-    width: 90%;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 100%;
   }
 
   .responsive-image {
@@ -269,6 +291,10 @@ html, body {
     width: 95%;
     height: 500px;
     margin: 30px auto;
+  }
+
+  .left-align button{
+    margin-left: 0px;
   }
 
 }
@@ -294,29 +320,37 @@ html, body {
   }
   .text_section p {
     font-size: 16px; /* Further reduce p */
-    margin-left: 100px;
+    margin-left: 12px;
     margin-right: 12px;
   }
 
   .text_section ol {
-    margin-left: 1000px;
-    margin-right: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .left-align button{
+    margin-left: 0px;
   }
 
   .text_section ul {
-    margin-left: 0px;
-    margin-right: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .text_section iframe {
-    margin-left: 100px;
-    margin-right: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
     max-width: 50%;
   }
 
-   .left-align {
+  .left-align {
     font-size: 12px;
-    margin-left: 10px;
-    margin-right: 12px;
+  }
+
+  .left-align p{
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .responsive-image {
