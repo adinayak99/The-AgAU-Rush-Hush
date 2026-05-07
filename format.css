@@ -18,7 +18,7 @@
   border: 3px solid #055a0d;
   padding: 8px 14px;
   border-radius: 24px;
-  margin-left: 380px;
+  margin-left: 0;
   font-size: 16px;
   opacity: 1; /* Ensure full opacity */
 }
@@ -53,6 +53,7 @@ html, body {
       align-items: center; /* Vertically center items */
       justify-content: center; /* Align to left, with space for text centering */
       padding: 20px; /* Add padding for spacing */
+      flex-wrap: wrap;
     }
 
 .logo {
@@ -60,6 +61,20 @@ html, body {
   width: 125px;
   height: 125px;
   margin-right: 0px; /* Space between logo and text */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .header_text {
@@ -107,10 +122,10 @@ html, body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 20px 0 20px;
+  padding: 30px 15px 0 15px;
   justify-content: center;
   gap: 8px;
-      
+  box-sizing: border-box;
 }
 
 .text_section h1{
@@ -137,44 +152,49 @@ html, body {
     font-variation-settings:'wdth' 105.5;
 }
 
+.text_section {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text_section p {
-  margin: 0;
+  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 2;
-  margin-left: 380px;
-  margin-right: 300px;
   margin-bottom: 12px;
   text-align: left;
+  max-width: 800px;
 }
 
 .text_section ol {
-  margin: 0;
+  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 2;
-  margin-left: 380px;
-  margin-right: 300px;
   margin-bottom: 12px;
   text-align: left;
+  max-width: 800px;
 }
 
 .text_section ul {
-  margin: 0;
+  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 2;
-  margin-left: 380px;
-  margin-right: 300px;
   margin-bottom: 12px;
   text-align: left;
+  max-width: 800px;
 }
 
 .text_section iframe {
-  margin-left: 380px;
-  margin-right: 300px;
-  margin-bottom: 12px;
-  min-width: 60% !important;
+  margin: 12px auto;
+  display: block;
+  width: 90%;
+  max-width: 800px;
   text-align: center;
 }
 
@@ -245,127 +265,168 @@ html, body {
   margin: 0;
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .header_section h1 {
     font-size: 30px; /* Smaller on tablets/mobile */
   }
+  
+  .header_section p {
+    font-size: 16px;
+  }
+  
   .text_section h1 {
-    font-size: 24px; /* Adjust as needed */
+    font-size: 28px; /* Adjust as needed */
   }
+  
   .text_section h3 {
-    font-size: 24px; /* Reduce h3 size */
+    font-size: 18px; /* Reduce h3 size */
   }
+  
   .text_section p {
-    font-size: 22px;
-    margin-left: 0px;
-    margin-right: 0px;
+    font-size: 15px;
+    max-width: 100%;
   }
 
   .left-align p{
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 12px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .text_section ol {
-    margin-left: 0px;
-    margin-right: 0px;
+    font-size: 15px;
+    max-width: 100%;
   }
 
   .text_section ul {
-    margin-left: 0px;
-    margin-right: 0px;
+    font-size: 15px;
+    max-width: 100%;
   }
 
   .text_section iframe {
-    margin-left: 12px;
-    margin-right: 12px;
-    width: 90%;
+    width: 95% !important;
+    margin: 12px auto !important;
   }
 
   .responsive-image {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   .chart-frame {
     width: 95%;
-    height: 500px;
+    height: 400px;
     margin: 30px auto;
   }
 
-  .left-align button{
-    margin-left: 0px;
+  .left-align button {
+    margin-left: 0;
   }
-
+  
+  .outline-disabled-economics {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 480px) {
   .header_section {
     flex-direction: column; /* Stack logo and text vertically if needed for centering */
     align-items: center;
+    padding: 15px;
   }
+  
   .logo {
     margin-right: 0;
     margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
   }
   
   .header_section h1 {
-    font-size: 24px; /* Even smaller on phones */
+    font-size: 22px; /* Even smaller on phones */
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
+  
+  .header_section p {
+    font-size: 14px;
+  }
+  
+  .text_section {
+    padding: 20px 12px 0 12px;
+  }
+  
   .text_section h1 {
-    font-size: 28px; /* Smaller for phones */
+    font-size: 22px; /* Smaller for phones */
+    margin-bottom: 10px;
   }
+  
   .text_section h3 {
-    font-size: 16px; /* Further reduce h3 */
+    font-size: 14px; /* Further reduce h3 */
   }
+  
   .text_section p {
-    font-size: 16px; /* Further reduce p */
-    margin-left: 12px;
-    margin-right: 12px;
+    font-size: 14px;
+    max-width: 100%;
+    margin-bottom: 10px;
   }
 
   .text_section ol {
-    margin-left: 12px;
-    margin-right: 12px;
+    font-size: 14px;
+    max-width: 100%;
+    padding-left: 20px;
   }
 
-  .left-align button{
-    margin-left: 0px;
+  .left-align button {
+    margin-left: 0;
+  }
+  
+  .outline-disabled-economics {
+    margin-left: 0;
   }
 
   .text_section ul {
-    margin-left: 12px;
-    margin-right: 12px;
+    font-size: 14px;
+    max-width: 100%;
+    padding-left: 20px;
   }
+  
   .text_section iframe {
-    margin-left: 12px;
-    margin-right: 12px;
-    max-width: 50%;
+    width: 100% !important;
+    margin: 10px auto !important;
   }
 
   .left-align {
     font-size: 12px;
+    align-self: flex-start;
+    width: 100%;
+    padding-left: 12px;
   }
 
-  .left-align p{
+  .left-align p {
     font-size: 12px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .responsive-image {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .chart-frame {
     width: 100%;
-    height: 450px;
-    margin: 20px auto;
+    height: 350px;
+    margin: 15px auto;
+  }
+  
+  .circle-button {
+    width: 45px;
+    height: 45px;
+    margin: 8px;
+    font-size: 18px;
   }
 
-   .author-block {
-    font-size: 12px;
-    margin-bottom: 20px;
+  .author-block {
+    font-size: 11px;
+    margin-bottom: 15px;
   }
-  /* Add more rules for other elements */
 }
