@@ -126,6 +126,8 @@ html, body {
   justify-content: flex-start;
   gap: 8px;
   box-sizing: border-box;
+  left: 0;
+  right: 0;
 }
 
 .text_section h1{
@@ -152,13 +154,7 @@ html, body {
     font-variation-settings:'wdth' 105.5;
 }
 
-.text_section {
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .text_section p {
   margin: 0 auto;
@@ -365,13 +361,13 @@ html, body {
   }
   
   .text_section p {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 100%;
     margin-bottom: 10px;
   }
 
   .text_section ol {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 100%;
     padding-left: 20px;
   }
@@ -385,7 +381,7 @@ html, body {
   }
 
   .text_section ul {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 100%;
     padding-left: 20px;
   }
