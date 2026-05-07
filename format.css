@@ -195,10 +195,13 @@ html, body {
 }
 
 .left-align {
-  align-self: flex-start; /* Align to the left within flex container */
+  align-self: center; /* Center within flex container */
   text-align: left;
   font-size: 18px;
-  margin-left: 380px;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -282,6 +285,14 @@ html, body {
   .text_section p {
     font-size: 15px;
     max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .left-align {
+    max-width: 100%;
+    padding: 0 15px;
+    align-self: center;
   }
 
   .left-align p{
@@ -293,11 +304,15 @@ html, body {
   .text_section ol {
     font-size: 15px;
     max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
   .text_section ul {
     font-size: 15px;
     max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
   .text_section iframe {
