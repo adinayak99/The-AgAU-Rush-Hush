@@ -377,13 +377,13 @@ html, body {
   }
   
   .text_section p {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 100%;
     margin-bottom: 0px;
   }
 
   .text_section ol {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 100%;
     padding-left: 20px;
   }
@@ -397,7 +397,7 @@ html, body {
   }
 
   .text_section ul {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 100%;
     padding-left: 20px;
   }
@@ -408,14 +408,14 @@ html, body {
   }
 
   .left-align {
-    font-size: 14px;
+    font-size: 18px;
     align-self: flex-start;
     width: 100%;
     padding-left: 12px;
   }
 
   .left-align p {
-    font-size: 14px;
+    font-size: 18px;
     margin-left: 0px;
     margin-right: 0px;
   }
