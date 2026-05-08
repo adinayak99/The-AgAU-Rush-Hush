@@ -354,7 +354,7 @@ html, body {
   }
   
   .header_section h1 {
-    font-size: 22px; /* Even smaller on phones */
+    font-size: 28px; /* Even smaller on phones */
     margin-top: 10px;
     margin-bottom: 8px;
   }
@@ -368,7 +368,7 @@ html, body {
   }
   
   .text_section h1 {
-    font-size: 22px; /* Smaller for phones */
+    font-size: 24px; /* Smaller for phones */
     margin-bottom: 10px;
   }
   
@@ -377,7 +377,7 @@ html, body {
   }
   
   .text_section p {
-    font-size: 16px;
+    font-size: 18px;
     max-width: 100%;
     margin-bottom: 0px;
   }
